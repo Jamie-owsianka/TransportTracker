@@ -7,6 +7,8 @@ The rest of the files are all my own code.
 
 The project breaks down into two php files, "forms.php" and "submitTrip.php", which are used to diplay and upload journeys from the local area. "style.css" is my separate stylesheet. 
 
+Current technologies used are HTML/CSS, JavaScript, PHP and MySQL.
+
 This project is still in progress. I currently plan to rework the php echo statements to use php fragments. 
 
 An example of the opening page can be seen in the file "opening-page.png". 
