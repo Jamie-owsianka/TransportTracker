@@ -1,0 +1,80 @@
+.input {
+    width: 250px;
+    height: 30px;
+    color:#000000;
+    font-size: 20px;
+    box-shadow: none;
+    background-color: #ffffff;
+    
+}
+
+
+.button {
+	
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+    border-style: none;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	color: white;
+	padding: 5px 10px 5px;
+    background: #56ca28 url(button_overlay.png) repeat-x scroll 0 0;
+}
+
+.passengerDiv {
+  position: relative;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  /*background: #e6e5c1;*/
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 10px;
+  width: 270px;
+  margin-right:auto; margin-left:auto;
+  overflow: hidden;
+}
+
+.deleteButton {
+    position:absolute;
+    right:0;
+    bottom:0;
+    border-radius: 10px;
+    background:#ce5a5a;
+    color:white;
+    padding: 7px;
+    border-style:none;
+}
+
+#mainContainer{
+    text-align: center;
+}
+
+#mainContent {
+    margin-right:auto; 
+    margin-left:auto;
+    bottom: 0; 
+    background-image: url(out_backround.jpg);
+    background-attachment: fixed; 
+    background-size: auto 100%; 
+    min-height: 800px;
+}
+
+#form {
+    margin-right:auto; 
+    margin-left:auto; 
+    text-align: center;
+    background-color: #ffffff; 
+    /* @media (max-width: 480px) { 
+        color: white;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+
+    } */
+    width:fit-content; 
+    border-radius: 25px; 
+    padding: 20px ;
+}
+
