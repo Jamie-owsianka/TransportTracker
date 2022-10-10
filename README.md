@@ -6,3 +6,5 @@ This project adds an extra webpage to a prexisting website. FOr this reason, I h
 The rest of the files are all my own code.
 
 The project breaks down into two php files, "forms.php" and "submitTrip.php", which are used to diplay and upload journeys from the local area. "style.css" is my separate stylesheet. 
+
+This project is still in progress. I currently plan to rework the php echo statements to use php fragments. 
