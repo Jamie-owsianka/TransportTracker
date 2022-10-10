@@ -9,4 +9,6 @@ The project breaks down into two php files, "forms.php" and "submitTrip.php", wh
 
 This project is still in progress. I currently plan to rework the php echo statements to use php fragments. 
 
-An example of the opening page can be seen in the file "opening-page.png". ![website preview](/TransportTracker/blob/main/opening_page.png)
+An example of the opening page can be seen in the file "opening-page.png". 
+  ![website preview](https://github.com/Jamie-owsianka/TransportTracker/blob/main/opening_page.png?raw=true) 
+
