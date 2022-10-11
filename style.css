@@ -20,7 +20,7 @@
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	color: white;
 	padding: 5px 10px 5px;
-    background: #56ca28 url(button_overlay.png) repeat-x scroll 0 0;
+    background: #56ca28;
 }
 
 .passengerDiv {
@@ -28,7 +28,6 @@
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
-  /*background: #e6e5c1;*/
   border-color: #000000;
   border-width: 2px;
   border-style: solid;
@@ -63,18 +62,27 @@
     min-height: 800px;
 }
 
-#form {
+.content {
     margin-right:auto; 
     margin-left:auto; 
     text-align: center;
     background-color: #ffffff; 
-    /* @media (max-width: 480px) { 
-        color: white;
-        text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
-
-    } */
     width:fit-content; 
     border-radius: 25px; 
     padding: 20px ;
+    min-width: 250px;
 }
 
+.labler {
+    font-size: 20px; 
+    margin: 2px;
+}
+
+.labled {
+    color: black;
+    margin: 1px;
+}
+
+.standOutTitle{
+    text-shadow: 0 +1px 1px rgba(255, 255, 255, 0.25), -2px 0 1px rgba(0,0,0,0.25);
+}

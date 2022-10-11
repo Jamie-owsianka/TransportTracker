@@ -68,6 +68,18 @@ function changed(){ //checks for a change in selector and adds textinput for "ot
 }
 
 function validateForm(){
+    let driverName = document.forms["inputForm"]["driver"]; //tests name is set
+    if (driverName.value == ""){
+        alert("Please add your name");
+        driverName.focus();
+        return false;
+    }
+    let dateInput = document.forms["inputForm"]["date"]; //tests date is set
+    let date = new Date(dateInput.value); 
+    if (isNaN(date)){
+        alert ("Please pick a date");
+        return false;
+    }
     return true;
 
 }
@@ -76,11 +88,11 @@ function validateForm(){
 
 <div id = "mainContainer"  style = "background-color: #fffef0; bottom: 0px">
 <div id = "mainContent"  ><br><br>
-    <form id = "form"  action="submitTrip.php" method="post" onsubmit="return validateForm();">
+    <form class = "content" name="inputForm" action="submitTrip.php" method="post" onsubmit="return validateForm();">
     <label for="driver">Driver:</label><br>
-    <input type="text" class = "input" name="driver" aytocomplete="on"><br>
+    <input type="text" class = "input" name="driver" id="driver" autocomplete="on"><br>
     <label for="date">Date:</label><br>
-    <input type="date" class="input" name = "date" autocomplete="off"><br>
+    <input type="date" class="input" name = "date" id="date" autocomplete="off"><br>
     <label for="destination">Location:</label><br>
     <select name="destination" id="location"  class="input" autocomplete="off" onchange="changed()">
         <option value="Langar">Langar</option>
@@ -95,7 +107,10 @@ function validateForm(){
         >Submit</button><br>
     </form>
     <script type="text/javascript">
-        addPassenger();
+        addPassenger();//adds first passenger
+        //sets max date to today
+        let dateInput = document.forms["inputForm"]["date"];
+        dateInput.max = new Date().toISOString().split("T")[0];
      </script>
 
     <br><br><br><br>   
